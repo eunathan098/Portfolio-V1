@@ -295,7 +295,7 @@ h3{
 
 @media (min-width: 320px) and (max-width: 700px){
     .img-perfil{
-        height:120px;
+        height:170px;
     }
 
     .header-titulo{
@@ -308,6 +308,10 @@ h3{
     }
 
     .img-tecnologias{
-        height: 130px;
+        height: 100px;
+    }
+
+    h4{
+        font-size: 14px;
     }
 }
