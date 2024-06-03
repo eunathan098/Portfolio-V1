@@ -306,4 +306,8 @@ h3{
         display: flex;
         flex-direction: row;
     }
+
+    .img-tecnologias{
+        height: 130px;
+    }
 }
