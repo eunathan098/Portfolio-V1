@@ -1,5 +1,4 @@
 function acessar(){
-
-    window.location.href="index2.html";
+    window.location.href="profile.html";
 }
   

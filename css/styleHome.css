@@ -31,9 +31,18 @@ ul{
     text-decoration: none;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     margin-left: 10px;
+}
+
+ul li{
+    transition: transform 0.3s ease-in-out;
+
+}
+
+ul li:hover {
+    transform: scale(1.2);
 }
 
 .apresentacao{
