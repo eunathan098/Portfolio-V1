@@ -9,7 +9,7 @@
 }
 
 body {
-    background: linear-gradient(blue 50%, wheat 100%);
+    background: white;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -21,7 +21,6 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     position: fixed;
-    background: white;
     box-shadow: 0px 0px 10px black;
 }
 
@@ -75,7 +74,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background: white;
+   
     background-size: 100%;
     align-items: center;
     padding: 150px 100px 100px 100px;
@@ -135,7 +134,6 @@ a:hover{
 .btn-sessao1 {
     height: 40px;
     width: 150px;
-    border-radius: 20px;
     border: transparent;
     color: white;
     margin-top: 5px;
@@ -207,12 +205,12 @@ h5 {
 .sessao2{
     text-align: center;
     padding: 20px;
-    background-color: white;
+ 
 }
 
 .sessao3{
     padding-bottom: 30px;
-    background-color: white;
+   
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -244,8 +242,8 @@ h5 {
 
 .sites{
     padding: 20px;
-    background-color: rgba(128, 128, 128, 0.113);
-    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.589);
+    border-radius: 10px;
     margin: 15px;
     transition: transform 0.3s ease-in-out;
 }
@@ -292,6 +290,9 @@ h5 {
 h3{ 
     font-family: 'Alegreya Sans SC', sans-serif;
 }
+
+/*  teste de funcionalidade  */
+
 
 @media (min-width: 320px) and (max-width: 700px){
     .img-perfil{
