@@ -1,205 +1,207 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="css/styleProfile.css">
-    <link rel="icon" href="imagens/nathanlogo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <script src="script.js"></script>
-    <title>Portfólio | Nathan Cruz</title>
+    <link rel="stylesheet" href="css/styleMobile.css">
+    <link rel="shortcut icon" href="imagens/perfil.jpg" type="image/x-icon">
+    <title> Nathan | Dev </title>
 </head>
 
 <body>
-    <header>
-        <div class="barra-topo-logo">
-            <h1 id="barra-topo-titulo"> <span class="titulo">PORTFÓLIO.</span> </h1>
-        </div>
-        <div class="links">
+    <header id="header">
+        <img src="./imagens/logo-banner.png" alt="" height="35px" class="header-logo">
+        <nav>
             <ul>
-                <li><a href="https://wa.me/5511963063466" target="_blank">
-                        <img class="logotipo" src="imagens/contato.png" alt="contato">
-                    </a></li>
-                <li><a href="https://github.com/eunathan098">
-                        <img class="logotipo" src="imagens/github.png" alt="github">
-                    </a></li>
-                <li><a href="https://www.linkedin.com/in/nathan-silva-2025b9186">
-                        <img class="logotipos" src="imagens/linkedi.png" alt="">
-                    </a></li>
-                <li><a href="cv/curriculoexample">
-                        <img class="logotipos" src="imagens/baixar.png" alt="">
-                    </a></li>
+                <li> Principal </li>
+                <li> Projetos </li>
+                <li> Contato </li>
+                <img src="./imagens/menu-aberto.png" alt="" class="menu-mobile" height="30px"
+                    onclick="abrirMenuMobile()" class="resume-reveal">
+            </ul>
+        </nav>
+    </header>
+
+    <a
+        href="https://wa.me/5511963063466?text=Ol%C3%A1%2C%20me%20interessei%20pelos%20seus%20servi%C3%A7os.%20Gostaria%20de%20saber%20sobre%3F">
+        <img src="./imagens/whatsapp.png" alt="WhatsApp" height="50px" class="whatsapp-flutuante">
+    </a>
+
+    <!-- Menu lateral MOBILE -->
+    <div class="menu-lateral-mobile" id="menu-lateral-mobile">
+        <div class="align">
+            <img src="./imagens/menu-aberto.png" alt="" height="30px" class="menu-mobile-lateral" id="icone-menu"
+                onclick="fecharMenuMobile()">
+        </div>
+        <div class="container-menu-lateral-list" id="menu-list">
+            <ul>
+                <li> Principal </li>
+                <li> Projetos </li>
+                <li> Contato </li>
             </ul>
         </div>
-    </header>
-    <main>
-        <div class="imagem-flutuante">
-            <a href="https://wa.me/5511963063466?text=Olá,+tenho+interesse+nos+seus+serviços!" target="_blank"><img src="imagens/logowhatsapp.png" alt="icone do whatsapp"
-                    height="40px"></a>
-        </div>
-        <section class="sessao1" id="comeco">
-            <div id="sessao1-box1">
-                <div class="fotoperfil">
-                    <img class="img-perfil" src="imagens/logo-img-perfil.JPG" alt="">
-                </div><br>
+    </div>
+
+    <section class="sessao_content">
+        <div class="container-perfil">
+            <div class="container-img">
+                <img class="imagem-perfil" src="./imagens/perfil_img.jpg" alt="imagem-perfil">
             </div>
-            <div class="container-header-titulo">
-                <h2 class="header-titulo"> Olá, eu sou <br>
-                    Nathan Silva.
-                </h2>
-                <h5 class="subtitulo-principal"> Desenvolvedor Web</h5><br>
-                <div class="container-button">
-                    <button>
-                        <a class="container-button-a" href="./cv/curriculo2024.pdf"> Donwload CV</a>
-                    </button>
-                    <button>
-                        <a class="container-button-a" href=""> Entre em contato</a>
-                    </button>
-                </div>
-               
-            </div>
-        </section>
-        <section id="sobre" class="sessao2">
-            <div class="titulo-texto">
-                <h1> SOBRE </h1>
-            </div><br>
             <div class="resumo">
-                <h4>
-                    Olá, muito prazer!<br><br>
+                <h1> Oi, sou o Nathan Cruz
+                </h1>
+                <h4> Desenvolvedor Web </h4>
+                <button class="btn"> Contato </button>
+            </div>
+        </div>
+    </section>
 
-                    Desde pequeno, sempre fui fascinado por tudo que envolve tecnologia.<br>
-                    Ao ficar mais velho, descobri uma paixão especial pela área de Desenvolvimento.<br>
-                    Sempre tive interesse em entender como funciona a Web pelos bastidores e como as tecnologias se comunicavam através de recursos e funcionalidades...<br>
+    <section class="sessao_content-2">
+        <div class="container-titulos">
+            <div class="line"></div>
+            <h1 class="titulos">
+                Sobre mim
+            </h1>
+        </div>
+        <div class="container-sobre-mim">
+            <div class="bio">
+                <p class="txt"> Olá, sou Nathan Cruz...<br><br>
+                    Desenvolvedor de landing pages apaixonado por criar experiências digitais impactantes e
+                    eficientes.<br>
+                    Com uma sólida base de conhecimentos práticos e em constante busca pelo aperfeiçoamento,<br>
+                    estou sempre focado em entregar soluções que atendem às necessidades dos meus clientes de forma
+                    criativa e estratégica.<br><br>
 
-                    Hoje estou me profissionalizando na área, através de oportunidades, projetos e estudos contínuos das principais tecnologias do mercado. Atualmente focado em Typescript, NodeJs, Postgres e Apis Rest Full (Backend) e conhecimentos sólidos em programação (Front-End) Html5, Css3, Javascript e Bootstrap.<br>
+                    Meu objetivo é criar páginas de captura que não apenas tenham uma aparência atraente, mas que também
+                    sejam altamente funcionais e otimizadas para conversão.<br>
 
-                    Por aqui posto alguns de meus projetos e deixo a dispor o meu contato.<br><br>
-                    
-                    Contato:<br>
-                    E-mail: nathandasilva1891@gmail.com<br><br>
-                </h4>
-                <a href="https://github.com/eunathan098">
-                    <img class="logo-github" src="imagens/github.png" alt="LOGOGITHUB">
+                    </br> Tenho experiência prática no uso de ferramentas modernas e em técnicas que garantem a melhor
+                    performance, seja para aumentar a taxa de conversão ou melhorar a experiência do usuário.<br>
+
+                    Atualmente, estou expandindo minhas habilidades para me tornar um profissional ainda mais completo,
+                    acompanhando as tendências do mercado e aprofundando meu conhecimento em tecnologias e design.<br>
+
+                    Se você busca um desenvolvedor que se preocupa com os detalhes e com a qualidade final de cada
+                    projeto, vamos conversar! Estou à disposição para ajudar a transformar suas ideias em resultados.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="sessao_content-2">
+        <div class="line"></div>
+        <div>
+            <h1> Habilidades </h1>
+        </div><br>
+
+        <section class="container-habilidades">
+            <div class="hardskils">
+                <img src="./imagens/logotipo-html.png" alt="" class="habilidades">
+                <img src="./imagens/logotipo-css.png" alt="" class="habilidades">
+                <img src="./imagens/logotipo-javascript.png" alt="" class="habilidades2">
+            </div>
+
+            <div class="hardskils">
+                <img src="./imagens/logotipo-typescript.png" alt="" class="habilidades">
+                <img src="./imagens/logotipo-nodejs.png" alt="" class="habilidades">
+                <img src="./imagens/logotipo-postgressql.png" alt="" class="habilidades">
+            </div>
+        </section>
+
+        <section class="sessao_content-2">
+            <div class="line"></div>
+            <div>
+                <h1> Projetos </h1>
+            </div><br>
+
+            <div class="container-projetos">
+                <div class="container-projetos-2">
+
+                    <div class="container-projeto-content">
+                        <img src="./imagens/banner-veterinaria.png" alt="" height="150px">
+                        <p> Projeto dedicado a landing page de profissional.<br>
+                            Com sessão para contato, localização e fotos.<br>
+                            Imagens meranente ilustrativas. </p><br>
+                        <button><a href="https://veterinaria-lp.vercel.app/">Acessar</a></button>
+                    </div>
+
+                    <div class="container-projeto-content">
+                        <img src="./imagens/bannerlojavirtual.png" alt="" height="150px">
+
+                        <p> Projeto dedicado a landing page de profissional.<br>
+                            Com sessão para contato, localização e fotos.<br>
+                            Imagens meranente ilustrativas. </p><br>
+                        <button> Acessar </button>
+                    </div>
+
+                </div>
+
+
+                <div class="container-projetos-2">
+
+                    <div class="container-projeto-content">
+                        <img src="./imagens/banner-coffecode.png" alt="" height="150px">
+                        <p> Projeto dedicado a landing page de profissional.<br>
+                            Com sessão para contato, localização e fotos.<br>
+                            Imagens meranente ilustrativas. </p><br>
+                        <button><a href="https://coffecode1.vercel.app/">Acessar</a></button>
+                    </div>
+
+                    <div class="container-projeto-content">
+                        <img src="./imagens/caninosfoto.png" alt="" height="150px">
+                        <p> Projeto dedicado a landing page de profissional.<br>
+                            Com sessão para contato, localização e fotos.<br>
+                            Imagens meranente ilustrativas. </p><br>
+                        <button> Acessar </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sessao_content-3">
+            <div class="line"></div>
+            <div>
+                <h1> Contato </h1>
+            </div><br>
+
+            <div class="container-contatos">
+                <a href="https://www.linkedin.com/in/nathan-cruz-2025b9186/">
+                    <img class="icones-contato" src="./imagens/linkedin.png" alt="Linkedin">
                 </a>
+                <a href="https://github.com/eunathan098">
+                    <img class="icones-contato" src="./imagens/github.png" alt="GitHub">
+                </a>
+
+                <a href="./cv/CV2025BR.pdf">
+                    <img class="icones-contato" src="./imagens/curriculo.png" alt="Curriculo">
+                </a>
+
+            </div>
+
+
+            <div class="container-contatos">
+                <a
+                    href="https://wa.me/5511963063466?text=Ol%C3%A1%2C%20me%20interessei%20pelos%20seus%20servi%C3%A7os.%20Gostaria%20de%20saber%20sobre%3F">
+                    <img class="icones-contato" src="./imagens/whatsapp (3).png" alt="">
+                </a>
+                <a
+                    href="mailto:nathandasilva1891@gmail.com?subject=Informações%20sobre%20os%20servi%C3%A7os&body=Ol%C3%A1%2C%20me%20interessei%20pelos%20seus%20servi%C3%A7os.%20Gostaria%20de%20saber%20mais%3F">
+                    <img class="icones-contato" src="./imagens/e-mail.png" alt="">
+                </a>
+                <img class="icones-contato" src="./imagens/gmail.png" alt="">
+                <img src="" alt="">
             </div>
         </section>
-        <section id="habilidades" class="sessao3">
-            <div class="titulo-texto">
-                <h1> HABILIDADES </h1>
-            </div><br>
-            <div class="tecnologias-main">
-                <img class="img-tecnologias" src="imagens/logotipo-html.png" alt="" height="160px">
-                <img class="img-tecnologias" src="imagens/logotipo-css.png" alt="" height="160px">
-                <img class="img-tecnologias" src="imagens/logotipo-javascript.png" alt="" height="180px">
-            </div><br>
-            
-            <div class="tecnologias-main">
-                <img class="img-tecnologias" src="imagens/logotipo-typescript.png" alt="" height="160px">
-                <img class="img-tecnologias" src="imagens/logotipo-nodejs.png" alt="" height="160px">
-                <img class="img-tecnologias" src="imagens/logotipo-postgressql.png" alt="" height="160px">
-            </div>
-        </section>
-        <section class="sessao3">
-            <div class="titulo-texto">
-                <h1> PROJETOS </h1>
-            </div><br>
-            <div id="projetos" class="projetos">
 
-                <div class="sites">
-                    <h3> Sistema de usuários (desenvolvimento) </h3><br>
-                    <img src="imagens/sistemausuarios.png" alt="" height="150px"><br><br>
-                    <a class="codigo" href="https://login-khaki-nine.vercel.app/"> DEPLOY </a>
-                    <a class="codigo" href="#"> CÓDIGO </a>
-                </div>
+        <footer>
+            <p> Todos os direitos reservados @2024</p>
+        </footer>
 
-                <div class="sites">
-                    <h3> BlueStore </h3><br>
-                    <img src="imagens/bluestore.png" alt="" height="150px"><br><br>
-                    <a class="codigo" href="https://eunathan098.github.io/blustore/"> DEPLOY </a>
-                    <a class="codigo" href="https://github.com/eunathan098/Veterinaria-LP"> CÓDIGO </a>
-                </div>
-
-                <div class="sites">
-                    <h3> Veterinária </h3><br>
-                    <img src="imagens/banner-veterinaria.png" alt="" height="150px"><br><br>
-                    <a class="codigo" href="https://veterinaria-lp.vercel.app/"> DEPLOY </a>
-                    <a class="codigo" href="https://github.com/eunathan098/buscarcep.git"> CÓDIGO </a>
-                </div>
-
-                <div class="sites">
-                    <h3> CoffeCode </h3><br>
-                    <img src="imagens/banner-coffecode.png" alt="" height="150px"><br><br>
-                    <a class="codigo" href="https://eunathan098.github.io/CoffeCode/"> DEPLOY </a>
-                    <a class="codigo" href="https://github.com/eunathan098/CoffeCode?"> CÓDIGO </a>
-                </div>
-
-                <div class="sites">
-                    <h3> Buscador de CEP - React </h3><br>
-                    <img src="imagens/buscarcep.png" alt="" height="150px"><br><br>
-                    <a class="codigo" href="https://eunathan098.github.io/buscarcep/"> DEPLOY </a>
-                    <a class="codigo" href="https://github.com/eunathan098/buscarcep.git"> CÓDIGO </a>
-                </div>
-
-                <div class="sites">
-                    <h3> Conversor </h3><br>
-                    <img src="imagens/siteconversor.png" alt="" height="150px"><br><br>
-                    <a class="codigo" href="https://eunathan098.github.io/conversor/"> DEPLOY </a>
-                    <a class="codigo" href="https://github.com/eunathan098/conversor.git"> CÓDIGO </a>
-                </div>
-                <div class="sites">
-                    <h3> Lista de tarefas </h3><br>
-                    <img src="imagens/sitelistadetarefas.png" alt="" height="150px"><br><br>
-                    <a class="codigo" href="https://eunathan098.github.io/listadetarefas/"> DEPLOY </a>
-                    <a class="codigo" href="https://github.com/eunathan098/listadetarefas.git"> CÓDIGO </a>
-                </div>
-                <div class="sites">
-                    <h3> Calculadora </h3><br>
-                    <img src="imagens/calculator.png" alt="" height="150px"><br><br>
-                    <a class="codigo" href="https://eunathan098.github.io/calculator/"> DEPLOY </a>
-                    <a class="codigo" href="https://github.com/eunathan098/calculator.git"> CÓDIGO </a>
-                </div>
-                
-                
-                
-                
-                <div class="sites">
-                    <h3> Cronômetro JS </h3><br>
-                    <img src="imagens/cronometro.png" alt="" height="150px"><br><br>
-                    <a class="codigo" href="https://eunathan098.github.io/cronometrojs/"> DEPLOY </a>
-                    <a class="codigo" href="https://github.com/eunathan098/cronometrojs.git"> CÓDIGO </a>
-                </div>
-
-                
-            </div>
-            </div>
-            <button class="button-projetos" onclick="acessarProjetos()"> Mais projetos </button>
-        </section>
-        <section id="contato" class="sessao3">
-            <div class="titulo-texto">
-                <h1> CONTATO </h1>
-            </div>
-            <a href="https://mail.google.com/mail/u/1/?ogbl#inbox">
-                <img src="imagens/GMAIL.png" alt="" height="40px">
-            </a>
-
-            <a href="https://web.whatsapp.com/">
-                <img src="imagens/logowhatsapp.png" alt="" height="40px">
-            </a>
-
-            <a href="https://github.com/eunathan098">
-                <img src="imagens/github.png" alt="" height="35px">
-            </a>
-        </section>
-    </main>
+        <script src="script.js"></script>
 </body>
-<script>
-    function acessarProjetos(){
-        alert("Em breve será postado novos projetos para o site.");
-    }
-</script>
 
 </html>
