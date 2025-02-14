@@ -14,13 +14,13 @@ function abrirMenuMobile() {
     containerMenu.style.display = "none";
   }
   
-  // window.sr = ScrollReveal({ reset: true });
+  window.sr = ScrollReveal({ reset: true });
   
-  // sr.reveal('.container-perfil', { duration: 1000});
+  sr.reveal('.container-perfil', { duration: 1000});
   
-  // window.sr = ScrollReveal({ reset: true });
+  window.sr = ScrollReveal({ reset: true });
   
-  // sr.reveal('.sessao_content-2', { duration: 1500});
+  sr.reveal('.sessao_content-2', { duration: 2500});
   
   // Efeito HEADER
   

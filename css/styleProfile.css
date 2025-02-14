@@ -10,8 +10,8 @@
 
 html, body{
     background-color: #ffffffe8;
-    overflow-x: hidden; /* Impede a rolagem horizontal */
-    width: 100%; /* Garante que a largura seja 100% */
+    overflow-x: hidden;
+    width: 100%;
 }
 
 header {
@@ -22,17 +22,17 @@ header {
     align-items: center;
     justify-content: space-around;
     box-shadow: 0px 0px 20px -10px black;
-    background-color: transparent;  /* Inicialmente transparente */
-    transition: background-color 0.3s ease;  /* Suaviza a transição do fundo */
+    background-color: transparent;
+    transition: background-color 0.3s ease;
 }
 
 header.bg-white {
-    background-color: white;  /* Altera o fundo para branco ao rolar */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra mais forte ao rolar */
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-logo{
-    height: 70px;
+    height: 60px;
 }
 
 nav{
@@ -85,19 +85,21 @@ nav ul{
 
 nav ul li{
     padding-right: 5px;
+    padding-bottom: 5px;
     color: rgba(0, 0, 0, 0.456);
     margin-left: 10px;
     list-style: none;
-    border-right: 2px solid rgba(0, 0, 0, 0.269);
     cursor: pointer;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;;
+    font-family: "Nunito", serif;
     transition: all 0.3s ease-in-out;
 }
 
 nav ul li:hover{
     color: rgba(0, 0, 255, 0.504);
     transform: scale(1.2);
+    border-bottom: 3px solid rgba(0, 0, 255, 0.504);
 }
 
 h3{
@@ -175,17 +177,27 @@ a:hover{
 }
 
 .imagem-perfil{
-    height: 650px;
+    height: 350px;
     margin-top: 100px;
 }
 
 .resumo{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    text-align: right;
-    flex-direction: column;
-    justify-content: center;
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+}
+
+.resumo h1{
+    color: rgba(0, 0, 0, 0.456);
+    font-size: 30px;
+    font-family: "Nunito", serif;
+}
+
+.resumo h4{
+    font-family: "Nunito", serif;
 }
 
 .btn{
@@ -228,6 +240,8 @@ a:hover{
 
 .bio{
     width: 50%;
+    display: flex;
+    text-align: left;
 }
 
 .txt{
@@ -271,6 +285,14 @@ button{
 }
 
 button:hover{
+    border: rgba(0, 0, 255, 0.504);
+    background-color: white;
+    border: 1px solid blue;
+    transition: 0.5s;
+    color: rgba(0, 0, 255, 0.504);
+}
+
+button .btn a:hover{
     border: rgba(0, 0, 255, 0.504);
     background-color: white;
     border: 1px solid blue;
