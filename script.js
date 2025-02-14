@@ -21,7 +21,14 @@ function abrirMenuMobile() {
   window.sr = ScrollReveal({ reset: true });
   
   sr.reveal('.sessao_content-2', { duration: 2500});
-  
+
+  // Efeito para Títulos da página 
+
+  sr.reveal('.titulos', {
+    rotate: {
+      x: 0, y: 80, z: 0
+    }, duration: 2000
+  })
   // Efeito HEADER
   
   // Obtém o elemento do cabeçalho
@@ -39,4 +46,3 @@ function abrirMenuMobile() {
   
   // Adiciona o ouvinte de evento para o scroll
   window.addEventListener("scroll", checkScroll);
-  
