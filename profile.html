@@ -7,20 +7,20 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="css/styleProfile.css">
     <link rel="stylesheet" href="css/styleMobile.css">
-    <link rel="shortcut icon" href="imagens/perfil.jpg" type="image/x-icon">
+    <link rel="icon" href="imagens/nathanlogo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title> Nathan | Dev </title>
 </head>
 
 <body>
     <header id="header">
         <img src="./imagens/logo-banner.png" alt="" height="35px" class="header-logo">
-        <nav>
+        <nav id="header">
             <ul>
-                <li> Principal </li>
-                <li> Projetos </li>
-                <li> Contato </li>
+                <li> <a href="#"> Principal </a></li>
+                <li> <a href="#projetos"> Projetos  </a></li>
+                <li> <a href="#contato"> Contato   </a></li>
                 <img src="./imagens/menu-aberto.png" alt="" class="menu-mobile" height="30px"
                     onclick="abrirMenuMobile()" class="resume-reveal">
             </ul>
@@ -111,10 +111,11 @@
             </div>
         </section>
 
-        <section class="sessao_content-2">
+        <section class="sessao_content-2" id="projetos">
             <div>
                 <h1 class="titulos"> Projetos </h1>
             </div><br>
+            <!-- Este Grid de Projetos esta em Colunas" -->
             <div class="line"></div>
 
             <div class="container-projetos">
@@ -125,16 +126,24 @@
                         <p> Projeto landing page profissional.<br>
                             Com sessão para contato, localização e fotos.<br>
                             Imagens meranente ilustrativas. </p><br>
-                        <button><a href="https://veterinaria-lp.vercel.app/">Acessar</a></button>
+                        <button>
+                            <a href="https://veterinaria-lp.vercel.app/">
+                                Acessar
+                            </a>
+                        </button>
                     </div>
 
                     <div class="container-projeto-content">
-                        <img src="./imagens/bannerlojavirtual.png" alt="" height="150px">
+                        <img src="imagens/banner-clinica.png" alt="" height="150px">
 
                         <p> Projeto landing page profissional.<br>
                             Com sessão para contato, localização e fotos.<br>
                             Imagens meranente ilustrativas. </p><br>
-                        <button> Acessar </button>
+                        <button>
+                            <a href="https://eunathan098.github.io/Clinica-Dr-Alexandre/">
+                                Acessar
+                            </a>
+                        </button>
                     </div>
                 </div>
 
@@ -144,21 +153,29 @@
                         <p> Projeto landing page profissional.<br>
                             Com sessão para contato, localização e fotos.<br>
                             Imagens meranente ilustrativas. </p><br>
-                        <button><a href="https://coffecode1.vercel.app/">Acessar</a></button>
+                        <button>
+                            <a href="https://coffecode1.vercel.app/">
+                                Acessar
+                            </a>
+                        </button>
                     </div>
 
                     <div class="container-projeto-content">
-                        <img src="imagens/bluestore.png" alt="" height="135px">
+                        <img src="imagens/banner-conversor.png" alt="" height="150px">
                         <p> Projeto landing page profissional.<br>
                             Com sessão para contato, localização e fotos.<br>
                             Imagens meranente ilustrativas. </p><br>
-                        <button> Acessar </button>
+                        <button>
+                            <a href="https://eunathan098.github.io/Conversor-Dolar-Real/">
+                                  Acessar 
+                            </a>  
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="sessao_content-3">
+        <section class="sessao_content-3" id="contato">
             <div>
                 <h1 class="titulos"> Contato </h1>
             </div><br>
@@ -183,7 +200,9 @@
                 <a href="mailto:nathandasilva1891@gmail.com?subject=Informações%20sobre%20os%20servi%C3%A7os&body=Ol%C3%A1%2C%20me%20interessei%20pelos%20seus%20servi%C3%A7os.%20Gostaria%20de%20saber%20mais%3F">
                     <img class="icones-contato" src="./imagens/e-mail.png" alt="">
                 </a>
-                    <img class="icones-contato" src="./imagens/gmail.png" alt="">
+                <a href="https://www.instagram.com/dev_nathancruz?igsh=ZzV3d2Q2NHB1aHBj&utm_source=qr">
+                    <img class="icones-contato" src="imagens/instagram.png" alt="">
+                </a>
             </div>
         </section>
 
